@@ -1,0 +1,47 @@
+body {
+    background-color: gray;
+    background-image: url(../img/the_telephones_08.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    margin: 0 auto;
+    width: 800px;
+    ul {
+        position: relative;
+        top: 300px;
+        display: flex;
+        justify-content: space-evenly;
+        li {
+            margin-right: 16px;
+            margin-left: 16px;
+            list-style: none;
+            border: black 5px solid;
+            border-radius: 5px;
+            button {
+                color: white;
+                background-color: rgba(110, 110, 110, 0.2);
+                cursor: pointer;
+                border: 0;
+                outline: hidden;
+                width: 120px;
+                height: 104px;
+                text-align: center;
+                text-shadow: 0.1em 0.1em 0.8em black;
+
+                h2 {
+                    font-size: 40px;
+                    margin: 0;
+                    margin-bottom: 8px;
+                }
+                span {
+                    color: goldenrod;
+                }
+            }
+            button:hover {
+                background-color: rgba(163, 163, 163, 0.5);
+            }
+        }
+    }
+}
