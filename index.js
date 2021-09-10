@@ -32,8 +32,3 @@ document.addEventListener("click", function (e) {
     audio.currentTime = 0;
     audio.play();
 })
-
-// keys.addEventListener("click", function (e) {
-
-// })
-
