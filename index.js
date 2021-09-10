@@ -13,11 +13,6 @@ const l = document.getElementById("tink")
 
 
 document.addEventListener("keydown", function (e) {
-    console.log(e.key);
-    const audio = document.createElement("audio");
-    audio.src = `./sounds/${e.key}.wav`;
-    audio.currentTime = 0;
-    audio.play();
 
     keys = [a, s, d, f, g, h, j, k, l]
     for (e.key in keys) {
@@ -29,6 +24,14 @@ document.addEventListener("keydown", function (e) {
 })
 
 
+document.addEventListener("click", function (e) {
+    console.log(e.target.innerHTML);
+    const sound = e.target.innerHTML.toLowerCase();
+    const audio = document.createElement("audio");
+    audio.src = `./sounds/${sound}.wav`;
+    audio.currentTime = 0;
+    audio.play();
+})
 
 // keys.addEventListener("click", function (e) {
 
